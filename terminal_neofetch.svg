@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0f14"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="1200" height="650" rx="16"/>
+    </clipPath>
+    <style>
+      @font-face {
+        src: local('JetBrains Mono'), local('Consolas'), local('Menlo');
+        font-family: 'TerminalMono';
+        font-display: swap;
+      }
+      text, tspan { white-space: pre; }
+      .mono { font-family: TerminalMono, JetBrains Mono, Menlo, Consolas, monospace; }
+      .fg { fill: #c9d1d9; }
+      .muted { fill: #8b949e; }
+      .key { fill: #ffa657; }
+      .value { fill: #a5d6ff; }
+      .ok { fill: #3fb950; }
+      .warn { fill: #f85149; }
+      .title { fill: #c9d1d9; font-weight: 600; }
+      .ascii { fill: #ffa657; }
+      .ascii2 { fill: #a5d6ff; }
+      .ascii3 { fill: #79c0ff; }
+      .ascii4 { fill: #f85149; }
+      .username { fill: #3fb950; }
+      .cursor { fill: #3fb950; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)" filter="url(#shadow)">
+    <!-- window -->
+    <rect x="0" y="0" width="1200" height="650" fill="url(#screen)" stroke="#30363d" stroke-width="1"/>
+
+    <!-- title bar -->
+    <rect x="0" y="0" width="1200" height="44" fill="url(#bg)"/>
+    <line x1="0" y1="44" x2="1200" y2="44" stroke="#21262d" stroke-width="1"/>
+
+    <!-- macOS window controls -->
+    <circle cx="18" cy="22" r="7" fill="#ff5f56"/>
+    <circle cx="38" cy="22" r="7" fill="#ffbd2e"/>
+    <circle cx="58" cy="22" r="7" fill="#27c93f"/>
+
+    <text class="mono title" x="86" y="28" font-size="14">terminal</text>
+
+    <!-- Username at the top -->
+    <text class="mono fg" x="24" y="80" font-size="14" xml:space="preserve">
+      <tspan x="24" y="80" class="username">0zDeKart</tspan><tspan class="muted">@</tspan><tspan class="fg">dev</tspan>
+    </text>
+
+    <!-- Command -->
+    <text class="mono fg" x="24" y="110" font-size="14" xml:space="preserve">
+      <tspan x="24" y="110" class="ok">$</tspan><tspan class="fg"> dekart</tspan>
+    </text>
+
+    <!-- content -->
+    <!-- ASCII art on the left -->
+    <text class="mono" x="24" y="140" font-size="10" xml:space="preserve">
+      <tspan x="24" y="140" class="ascii"> _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _ </tspan>
+      <tspan x="24" y="155" class="ascii2">|_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_|</tspan>
+      <tspan x="24" y="170" class="ascii3">|_|                                                            |_|</tspan>
+      <tspan x="24" y="185" class="ascii">|_| _ .-') _     ('-.  .-. .-')    ('-.     _  .-')   .-') _   |_|</tspan>
+      <tspan x="24" y="200" class="ascii2">|_|( (  OO) )  _(  OO) \  ( OO )  ( OO ).-.( \( -O ) (  OO) )  |_|</tspan>
+      <tspan x="24" y="215" class="ascii3">|_| \     .'_ (,------.,--. ,--.  / . --. / ,------. /     '._ |_|</tspan>
+      <tspan x="24" y="230" class="ascii">|_| ,`'--..._) |  .---'|  .'   /  | \-.  \  |   /`. '|'--...__)|_|</tspan>
+      <tspan x="24" y="245" class="ascii2">|_| |  |  \  ' |  |    |      /,.-'-'  |  | |  /  | |'--.  .--'|_|</tspan>
+      <tspan x="24" y="260" class="ascii3">|_| |  |   ' |(|  '--. |     ' _)\| |_.'  | |  |_.' |   |  |   |_|</tspan>
+      <tspan x="24" y="275" class="ascii">|_| |  |   / : |  .--' |  .   \   |  .-.  | |  .  '.'   |  |   |_|</tspan>
+      <tspan x="24" y="290" class="ascii2">|_| |  '--'  / |  `---.|  |\   \  |  | |  | |  |\  \    |  |   |_|</tspan>
+      <tspan x="24" y="305" class="ascii3">|_| `-------'  `------'`--' '--'  `--' `--' `--' '--'   `--'   |_|</tspan>
+      <tspan x="24" y="320" class="ascii">|_| _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _ |_|</tspan>
+      <tspan x="24" y="335" class="ascii2">|_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_||_|</tspan>
+    </text>
+
+    <!-- Info on the right -->
+    <text class="mono fg" x="480" y="140" font-size="14" xml:space="preserve">
+      <tspan x="480" y="140" class="key">Role</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">Full Stack Developer (Web3, AI/ML)</tspan>
+      <tspan x="480" y="160" class="key">Focus</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">Web3, Solana/EVM, AI + blockchain</tspan>
+      <tspan x="480" y="180" class="key">Email</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">dkartsefff@gmail.com</tspan>
+      <tspan x="480" y="200" class="key">Frontend</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">React, Next.js, TypeScript, Tailwind</tspan>
+      <tspan x="480" y="220" class="key">Web3</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">Solidity, Rust, Anchor, Ethers.js</tspan>
+      <tspan x="480" y="240" class="key">Backend</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">Go, Node.js, PostgreSQL, Prisma</tspan>
+      <tspan x="480" y="260" class="key">AI/ML</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">Python, PyTorch, OpenAI API</tspan>
+      <tspan x="480" y="280" class="key">Crypto</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">Applied cryptography, network protocols</tspan>
+      <tspan x="480" y="300" class="key">DevOps</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">Docker, Kubernetes, CI/CD, GitHub Actions</tspan>
+      <tspan x="480" y="320" class="key">GitHub</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="value">github.com/orangutangent</tspan>
+      <tspan x="480" y="340" class="key">Status</tspan><tspan class="muted">:</tspan><tspan class="fg"> </tspan><tspan class="ok">Available for opportunities</tspan>
+    </text>
+
+    <!-- Interests command -->
+    <text class="mono fg" x="24" y="370" font-size="14" xml:space="preserve">
+      <tspan x="24" y="370"> </tspan>
+      <tspan x="24" y="390" class="ok">$</tspan><tspan class="fg"> interests</tspan>
+    </text>
+
+    <!-- Interests output -->
+    <text class="mono fg" x="24" y="420" font-size="14" xml:space="preserve">
+      <tspan x="24" y="420" class="fg">  • Web3 &amp; Blockchain development</tspan>
+      <tspan x="24" y="440" class="fg">  • AI/ML integration with blockchain</tspan>
+      <tspan x="24" y="460" class="fg">  • Cryptography &amp; Network security</tspan>
+      <tspan x="24" y="480" class="fg">  • Full stack modern web apps</tspan>
+      <tspan x="24" y="500" class="fg">  • Open source contributions</tspan>
+    </text>
+
+    <!-- Cursor at the bottom -->
+    <text class="mono fg" x="24" y="540" font-size="14" xml:space="preserve">
+      <tspan x="24" y="540"> </tspan>
+      <tspan x="24" y="560" class="ok">$</tspan><tspan class="fg"> </tspan>
+    </text>
+    <g>
+      <text class="mono" x="-32" y="560" font-size="14">
+        <tspan fill="#3fb950">█</tspan>
+        <animate attributeName="fill" values="#3fb950;#ffa657;#a5d6ff;#79c0ff;#3fb950" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.7;1" dur="1s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+  </g>
+</svg>
